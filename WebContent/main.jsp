@@ -1,3 +1,4 @@
+<%@page import="user.UserDAO"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <jsp:useBean id="user" class="user.User" scope="page" />
@@ -200,6 +201,8 @@ to {
 		if (session.getAttribute("userID") != null) {
 			userID = (String) session.getAttribute("userID");
 		}
+		UserDAO now_user = new UserDAO();
+		boolean isStudent = now_user.isStudent(userID);
 	%>
 	
 	<div style="margin-left: 200px;">
@@ -243,7 +246,15 @@ to {
 	</div>
 	<%
 		} else {
-	%>	
+			if(isStudent) {
+	%>
+			<div id="mySidenav" class="sidenav">
+				<a href="update.jsp" id="about">정보 수정</a> <a href="select.jsp" id="blog">성적 조회</a>
+				<a href="logoutAction.jsp" id="projects">logout</a><a href="delete.jsp" id="contact">회원 탈퇴</a>
+			</div>
+	<%
+			} else {
+	%>
 			<div id="mySidenav" class="sidenav">
 				<a href="insert.jsp" id="about">성적 입력</a> <a href="updateScore.jsp" id="blog">성적 수정</a>
 				<a href="update.jsp" id="projects">정보 수정</a> <a href="select.jsp" id="contact">성적 조회</a>
@@ -251,6 +262,7 @@ to {
 			</div>
 	<% 
 		}
+	}
 	%>	
 	<script>
 		var slideIndex = 1;

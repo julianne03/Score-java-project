@@ -87,5 +87,23 @@ public class UserDAO {
 		}
 		return -1;
 	}
-	
+	public boolean isStudent(String userID) {
+		String SQL = "select userSt from user where userID=?";
+		try {
+			pstmt=conn.prepareStatement(SQL);
+			pstmt.setString(1, userID);
+			rs=pstmt.executeQuery();
+			if(rs.next()) {
+				if(rs.getString(1).equals("ÇÐ»ý")) {
+					return true;
+				}
+				else {
+					return false;
+				}
+			}
+		} catch(Exception e) {
+			e.printStackTrace();
+		}
+		return false;
+	}
 }

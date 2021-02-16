@@ -123,13 +123,6 @@ hr {
 }
 </style>
 <body>
-	<script>
-	code=prompt("암호를 입력하시오.");
-	if(code!=1379) {
-		location.href("main.jsp");
-	}
-	
-	</script>
 	<h2>Modal Insert Form</h2>
 
 	<button onclick="document.getElementById('id01').style.display='block'"

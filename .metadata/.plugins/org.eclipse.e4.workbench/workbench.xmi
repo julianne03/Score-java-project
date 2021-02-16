@@ -3,7 +3,7 @@
   <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workbench>&#xD;&#xA;&lt;mruList/>&#xD;&#xA;&lt;/workbench>"/>
   <tags>activeSchemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
   <tags>ModelMigrationProcessor.001</tags>
-  <children xsi:type="basic:TrimmedWindow" xmi:id="_inMG4vdQEeq0n4wK47bnSA" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_i_NlUfdQEeq0n4wK47bnSA" label="%trimmedwindow.label.eclipseSDK" x="461" y="124" width="1118" height="768">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_inMG4vdQEeq0n4wK47bnSA" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_i_NlUfdQEeq0n4wK47bnSA" label="%trimmedwindow.label.eclipseSDK" x="432" y="125" width="1118" height="768">
     <persistedState key="coolBarVisible" value="true"/>
     <persistedState key="perspectiveBarVisible" value="true"/>
     <persistedState key="isRestored" value="true"/>
@@ -73,9 +73,8 @@
           <tags>persp.showIn:org.eclipse.eclemma.ui.CoverageView</tags>
           <tags>persp.newWizSC:org.eclipse.jpt.jpa.ui.wizard.newJpaProject</tags>
           <tags>persp.perspSC:org.eclipse.jpt.ui.jpaPerspective</tags>
-          <children xsi:type="basic:PartSashContainer" xmi:id="_jNDNAfdQEeq0n4wK47bnSA" selectedElement="_jNDNAvdQEeq0n4wK47bnSA" horizontal="true">
+          <children xsi:type="basic:PartSashContainer" xmi:id="_jNDNAfdQEeq0n4wK47bnSA" selectedElement="_jNDNB_dQEeq0n4wK47bnSA" horizontal="true">
             <children xsi:type="basic:PartStack" xmi:id="_jNDNAvdQEeq0n4wK47bnSA" elementId="topLeft" containerData="2500" selectedElement="_jNDNA_dQEeq0n4wK47bnSA">
-              <tags>active</tags>
               <children xsi:type="advanced:Placeholder" xmi:id="_jNDNA_dQEeq0n4wK47bnSA" elementId="org.eclipse.ui.navigator.ProjectExplorer" ref="_jHv2QPdQEeq0n4wK47bnSA" closeable="true">
                 <tags>View</tags>
                 <tags>categoryTag:General</tags>
@@ -93,10 +92,11 @@
                 <tags>categoryTag:Java Browsing</tags>
               </children>
             </children>
-            <children xsi:type="basic:PartSashContainer" xmi:id="_jNDNB_dQEeq0n4wK47bnSA" containerData="7500">
-              <children xsi:type="basic:PartSashContainer" xmi:id="_jNDNCPdQEeq0n4wK47bnSA" containerData="7000" horizontal="true">
+            <children xsi:type="basic:PartSashContainer" xmi:id="_jNDNB_dQEeq0n4wK47bnSA" containerData="7500" selectedElement="_jNDNCPdQEeq0n4wK47bnSA">
+              <children xsi:type="basic:PartSashContainer" xmi:id="_jNDNCPdQEeq0n4wK47bnSA" containerData="7000" selectedElement="_jNDNCvdQEeq0n4wK47bnSA" horizontal="true">
                 <children xsi:type="advanced:Placeholder" xmi:id="_jNDNCfdQEeq0n4wK47bnSA" elementId="org.eclipse.ui.editorss" containerData="7000" ref="_jHnTYPdQEeq0n4wK47bnSA"/>
                 <children xsi:type="basic:PartStack" xmi:id="_jNDNCvdQEeq0n4wK47bnSA" elementId="topRight" containerData="3000" selectedElement="_jNDNC_dQEeq0n4wK47bnSA">
+                  <tags>active</tags>
                   <children xsi:type="advanced:Placeholder" xmi:id="_jNDNC_dQEeq0n4wK47bnSA" elementId="org.eclipse.ui.views.ContentOutline" ref="_jM-7kvdQEeq0n4wK47bnSA" closeable="true">
                     <tags>View</tags>
                     <tags>categoryTag:General</tags>
@@ -212,8 +212,6 @@
       <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view CommonNavigator.LINKING_ENABLED=&quot;0&quot; currentWorkingSetName=&quot;Aggregate for window 1600173600102&quot; org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets=&quot;0&quot;>&#xD;&#xA;&lt;lastRecentlyUsedFilters/>&#xD;&#xA;&lt;/view>"/>
       <tags>View</tags>
       <tags>categoryTag:General</tags>
-      <tags>active</tags>
-      <tags>activeOnClose</tags>
       <menus xmi:id="_jOCrgPdQEeq0n4wK47bnSA" elementId="org.eclipse.ui.navigator.ProjectExplorer">
         <tags>ViewMenu</tags>
         <tags>menuContribution:menu</tags>
@@ -316,6 +314,8 @@
       <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view/>"/>
       <tags>View</tags>
       <tags>categoryTag:General</tags>
+      <tags>active</tags>
+      <tags>activeOnClose</tags>
       <menus xmi:id="_js-DMPdQEeq0n4wK47bnSA" elementId="org.eclipse.ui.views.ContentOutline">
         <tags>ViewMenu</tags>
         <tags>menuContribution:menu</tags>
@@ -341,7 +341,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_jB5F4PdQEeq0n4wK47bnSA" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_q1kdkPdQEeqFpNdU390MoQ" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_in-KQfdQEeq0n4wK47bnSA"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_BM5NwHAXEeu8GrhWjy3Ipg" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_in-KQfdQEeq0n4wK47bnSA"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_jB5F4fdQEeq0n4wK47bnSA" elementId="group.edit" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -375,7 +375,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_jB5s8fdQEeq0n4wK47bnSA" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_q1oH8PdQEeqFpNdU390MoQ" elementId="org.eclipse.ui.window.pinEditor" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" enabled="false" type="Check" command="_in9jJfdQEeq0n4wK47bnSA"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_BM7qAHAXEeu8GrhWjy3Ipg" elementId="org.eclipse.ui.window.pinEditor" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" enabled="false" type="Check" command="_in9jJfdQEeq0n4wK47bnSA"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_jB5s8vdQEeq0n4wK47bnSA" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -3034,7 +3034,7 @@
   <addons xmi:id="_inMt8_dQEeq0n4wK47bnSA" elementId="MinMax Addon" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.MinMaxAddon"/>
   <addons xmi:id="_inMt9PdQEeq0n4wK47bnSA" elementId="org.eclipse.ui.workbench.addon.0" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon"/>
   <addons xmi:id="_inSNgPdQEeq0n4wK47bnSA" elementId="SplitterAddon" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.splitteraddon.SplitterAddon"/>
-  <addons xmi:id="_qjcy0fdQEeqFpNdU390MoQ" elementId="org.eclipse.ui.ide.addon.0" contributionURI="bundleclass://org.eclipse.ui.ide/org.eclipse.ui.internal.ide.addons.SaveAllDirtyPartsAddon"/>
+  <addons xmi:id="_IYS0IKimEeS11vbz3f9ezw" elementId="org.eclipse.ui.ide.addon.0" contributorURI="platform:/plugin/org.eclipse.ui.ide" contributionURI="bundleclass://org.eclipse.ui.ide/org.eclipse.ui.internal.ide.addons.SaveAllDirtyPartsAddon"/>
   <addons xmi:id="_dz0JgGOlEeSMMaPQU2nlzw" elementId="org.eclipse.ui.ide.application.addon.0" contributorURI="platform:/plugin/org.eclipse.ui.ide.application" contributionURI="bundleclass://org.eclipse.ui.ide.application/org.eclipse.ui.internal.ide.application.addons.ModelCleanupAddon"/>
   <categories xmi:id="_inuSYPdQEeq0n4wK47bnSA" elementId="org.eclipse.ui.category.edit" name="Edit"/>
   <categories xmi:id="_inuSYfdQEeq0n4wK47bnSA" elementId="org.eclipse.mylyn.wikitext.ui.editor.category" name="WikiText Markup Editing Commands" description="commands for editing lightweight markup"/>
